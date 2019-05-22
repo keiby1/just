@@ -41,7 +41,7 @@ class Cross{
             else limit++;
         }
 
-        newList.addAll(parent);
+        newList.addAll(units);
         return newList;
     }
 
