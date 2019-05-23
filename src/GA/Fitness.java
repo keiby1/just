@@ -17,7 +17,7 @@ class Fitness{
         return sum/units.size();
     }
 
-    public void calcFitnessTime(List<Unit> units, Map map){
+    public List<Unit> calcFitnessTime(List<Unit> units, Map map){
         double f =0, way = 0;
         int time = 0;
 
@@ -27,9 +27,10 @@ class Fitness{
             }
             unit.setFitness((unit.getHromosome().size()/way)*1000);
         }
+        return units;
     }
 
-    public void calcFitnessWay(List<Unit> units, Map map){
+    public List<Unit> calcFitnessWay(List<Unit> units, Map map){
         double f =0, time = 0;
         int time = 0;
        
@@ -39,6 +40,6 @@ class Fitness{
             }
             unit.setFitness((unit.getHromosome().size()/time)*1000);
         }
-
+return units;
     }
 }
